@@ -1,5 +1,5 @@
 Analysis & Synthesis report for skeleton
-Thu Dec 03 14:23:33 2020
+Thu Dec 03 18:05:47 2020
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -37,8 +37,8 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
  29. Parameter Settings for User Entity Instance: vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component
  30. Parameter Settings for User Entity Instance: vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component
  31. Parameter Settings for User Entity Instance: vga_controller:vga_ins|bgGrid:bgGrid0
- 32. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Mod0
- 33. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0
+ 32. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0
+ 33. Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Mod0
  34. altpll Parameter Settings by Entity Instance
  35. altsyncram Parameter Settings by Entity Instance
  36. Port Connectivity Checks: "VGA_Audio_PLL:p1"
@@ -82,15 +82,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 03 14:23:33 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 03 18:05:47 2020       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,516                                       ;
-;     Total combinational functions  ; 1,387                                       ;
-;     Dedicated logic registers      ; 434                                         ;
-; Total registers                    ; 434                                         ;
+; Total logic elements               ; 1,483                                       ;
+;     Total combinational functions  ; 1,354                                       ;
+;     Dedicated logic registers      ; 426                                         ;
+; Total registers                    ; 426                                         ;
 ; Total pins                         ; 158                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,463,744                                   ;
@@ -205,64 +205,64 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                   ;
-+----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                           ; Library ;
-+----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------------------------------------+---------+
-; imem.mif                         ; yes             ; User Memory Initialization File  ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/imem.mif                       ;         ;
-; dmem.mif                         ; yes             ; User Memory Initialization File  ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/dmem.mif                       ;         ;
-; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File       ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/VGA_Audio_PLL.v                ;         ;
-; Reset_Delay.v                    ; yes             ; User Verilog HDL File            ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/Reset_Delay.v                  ;         ;
-; skeleton.v                       ; yes             ; User Verilog HDL File            ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v                     ;         ;
-; PS2_Interface.v                  ; yes             ; User Verilog HDL File            ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/PS2_Interface.v                ;         ;
-; PS2_Controller.v                 ; yes             ; User Verilog HDL File            ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/PS2_Controller.v               ;         ;
-; processor.v                      ; yes             ; User Verilog HDL File            ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/processor.v                    ;         ;
-; pll.v                            ; yes             ; User Wizard-Generated File       ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/pll.v                          ;         ;
-; lcd.sv                           ; yes             ; User SystemVerilog HDL File      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/lcd.sv                         ;         ;
-; imem.v                           ; yes             ; User Wizard-Generated File       ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/imem.v                         ;         ;
-; Hexadecimal_To_Seven_Segment.v   ; yes             ; User Verilog HDL File            ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/Hexadecimal_To_Seven_Segment.v ;         ;
-; dmem.v                           ; yes             ; User Wizard-Generated File       ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/dmem.v                         ;         ;
-; Altera_UP_PS2_Data_In.v          ; yes             ; User Verilog HDL File            ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/Altera_UP_PS2_Data_In.v        ;         ;
-; Altera_UP_PS2_Command_Out.v      ; yes             ; User Verilog HDL File            ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/Altera_UP_PS2_Command_Out.v    ;         ;
-; vga_controller.v                 ; yes             ; User Verilog HDL File            ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v               ;         ;
-; video_sync_generator.v           ; yes             ; User Verilog HDL File            ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/video_sync_generator.v         ;         ;
-; img_index.v                      ; yes             ; User Wizard-Generated File       ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/img_index.v                    ;         ;
-; img_data.v                       ; yes             ; User Wizard-Generated File       ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/img_data.v                     ;         ;
-; lab7_img_data.mif                ; yes             ; User Memory Initialization File  ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/lab7_img_data.mif              ;         ;
-; lab7_img_index.mif               ; yes             ; User Memory Initialization File  ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/lab7_img_index.mif             ;         ;
-; vgaAddrTranslater.v              ; yes             ; User Verilog HDL File            ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vgaAddrTranslater.v            ;         ;
-; bgGrid.v                         ; yes             ; User Verilog HDL File            ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/bgGrid.v                       ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altpll.tdf                                         ;         ;
-; aglobal160.inc                   ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/aglobal160.inc                                     ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/stratix_pll.inc                                    ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/stratixii_pll.inc                                  ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/cycloneii_pll.inc                                  ;         ;
-; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/pll_altpll.v                ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altsyncram.tdf                                     ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/stratix_ram_block.inc                              ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_mux.inc                                        ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_decode.inc                                     ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/a_rdenreg.inc                                      ;         ;
-; altrom.inc                       ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altrom.inc                                         ;         ;
-; altram.inc                       ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altram.inc                                         ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altdpram.inc                                       ;         ;
-; db/altsyncram_8vc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf         ;         ;
-; db/altsyncram_2m81.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf         ;         ;
-; db/altsyncram_ekc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_ekc1.tdf         ;         ;
-; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/decode_aaa.tdf              ;         ;
-; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/mux_1pb.tdf                 ;         ;
-; db/altsyncram_pjc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_pjc1.tdf         ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_divide.tdf                                     ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/abs_divider.inc                                    ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                     ; c:/altera_lite/16.0/quartus/libraries/megafunctions/sign_div_unsign.inc                                ;         ;
-; db/lpm_divide_lcm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/lpm_divide_lcm.tdf          ;         ;
-; db/sign_div_unsign_anh.tdf       ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/sign_div_unsign_anh.tdf     ;         ;
-; db/alt_u_div_8af.tdf             ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/alt_u_div_8af.tdf           ;         ;
-; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/add_sub_7pc.tdf             ;         ;
-; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/add_sub_8pc.tdf             ;         ;
-; db/lpm_divide_ikm.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/lpm_divide_ikm.tdf          ;         ;
-+----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
++----------------------------------+-----------------+----------------------------------+---------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                            ; Library ;
++----------------------------------+-----------------+----------------------------------+---------------------------------------------------------------------------------------------------------+---------+
+; imem.mif                         ; yes             ; User Memory Initialization File  ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/imem.mif                       ;         ;
+; dmem.mif                         ; yes             ; User Memory Initialization File  ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/dmem.mif                       ;         ;
+; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File       ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/VGA_Audio_PLL.v                ;         ;
+; Reset_Delay.v                    ; yes             ; User Verilog HDL File            ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/Reset_Delay.v                  ;         ;
+; skeleton.v                       ; yes             ; User Verilog HDL File            ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v                     ;         ;
+; PS2_Interface.v                  ; yes             ; User Verilog HDL File            ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/PS2_Interface.v                ;         ;
+; PS2_Controller.v                 ; yes             ; User Verilog HDL File            ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/PS2_Controller.v               ;         ;
+; processor.v                      ; yes             ; User Verilog HDL File            ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/processor.v                    ;         ;
+; pll.v                            ; yes             ; User Wizard-Generated File       ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/pll.v                          ;         ;
+; lcd.sv                           ; yes             ; User SystemVerilog HDL File      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/lcd.sv                         ;         ;
+; imem.v                           ; yes             ; User Wizard-Generated File       ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/imem.v                         ;         ;
+; Hexadecimal_To_Seven_Segment.v   ; yes             ; User Verilog HDL File            ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/Hexadecimal_To_Seven_Segment.v ;         ;
+; dmem.v                           ; yes             ; User Wizard-Generated File       ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/dmem.v                         ;         ;
+; Altera_UP_PS2_Data_In.v          ; yes             ; User Verilog HDL File            ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/Altera_UP_PS2_Data_In.v        ;         ;
+; Altera_UP_PS2_Command_Out.v      ; yes             ; User Verilog HDL File            ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/Altera_UP_PS2_Command_Out.v    ;         ;
+; vga_controller.v                 ; yes             ; User Verilog HDL File            ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vga_controller.v               ;         ;
+; video_sync_generator.v           ; yes             ; User Verilog HDL File            ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/video_sync_generator.v         ;         ;
+; img_index.v                      ; yes             ; User Wizard-Generated File       ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/img_index.v                    ;         ;
+; img_data.v                       ; yes             ; User Wizard-Generated File       ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/img_data.v                     ;         ;
+; lab7_img_data.mif                ; yes             ; User Memory Initialization File  ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/lab7_img_data.mif              ;         ;
+; lab7_img_index.mif               ; yes             ; User Memory Initialization File  ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/lab7_img_index.mif             ;         ;
+; vgaAddrTranslater.v              ; yes             ; User Verilog HDL File            ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vgaAddrTranslater.v            ;         ;
+; bgGrid.v                         ; yes             ; User Verilog HDL File            ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/bgGrid.v                       ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/altpll.tdf                    ;         ;
+; aglobal160.inc                   ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/aglobal160.inc                ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/stratix_pll.inc               ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/stratixii_pll.inc             ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/cycloneii_pll.inc             ;         ;
+; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/pll_altpll.v                ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/altsyncram.tdf                ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/stratix_ram_block.inc         ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/lpm_mux.inc                   ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/lpm_decode.inc                ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/a_rdenreg.inc                 ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/altrom.inc                    ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/altram.inc                    ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/altdpram.inc                  ;         ;
+; db/altsyncram_8vc1.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf         ;         ;
+; db/altsyncram_2m81.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf         ;         ;
+; db/altsyncram_ekc1.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_ekc1.tdf         ;         ;
+; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/decode_aaa.tdf              ;         ;
+; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/mux_1pb.tdf                 ;         ;
+; db/altsyncram_pjc1.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_pjc1.tdf         ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/lpm_divide.tdf                ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/abs_divider.inc               ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                     ; d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/sign_div_unsign.inc           ;         ;
+; db/lpm_divide_ikm.tdf            ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/lpm_divide_ikm.tdf          ;         ;
+; db/sign_div_unsign_anh.tdf       ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/sign_div_unsign_anh.tdf     ;         ;
+; db/alt_u_div_8af.tdf             ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/alt_u_div_8af.tdf           ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/add_sub_7pc.tdf             ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/add_sub_8pc.tdf             ;         ;
+; db/lpm_divide_lcm.tdf            ; yes             ; Auto-Generated Megafunction      ; D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/lpm_divide_lcm.tdf          ;         ;
++----------------------------------+-----------------+----------------------------------+---------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -270,20 +270,20 @@ agreement for further details.
 +---------------------------------------------+------------------------------------------------+
 ; Resource                                    ; Usage                                          ;
 +---------------------------------------------+------------------------------------------------+
-; Estimated Total logic elements              ; 1,516                                          ;
+; Estimated Total logic elements              ; 1,483                                          ;
 ;                                             ;                                                ;
-; Total combinational functions               ; 1387                                           ;
+; Total combinational functions               ; 1354                                           ;
 ; Logic element usage by number of LUT inputs ;                                                ;
-;     -- 4 input functions                    ; 725                                            ;
-;     -- 3 input functions                    ; 216                                            ;
-;     -- <=2 input functions                  ; 446                                            ;
+;     -- 4 input functions                    ; 718                                            ;
+;     -- 3 input functions                    ; 185                                            ;
+;     -- <=2 input functions                  ; 451                                            ;
 ;                                             ;                                                ;
 ; Logic elements by mode                      ;                                                ;
-;     -- normal mode                          ; 1161                                           ;
-;     -- arithmetic mode                      ; 226                                            ;
+;     -- normal mode                          ; 1158                                           ;
+;     -- arithmetic mode                      ; 196                                            ;
 ;                                             ;                                                ;
-; Total registers                             ; 434                                            ;
-;     -- Dedicated logic registers            ; 434                                            ;
+; Total registers                             ; 426                                            ;
+;     -- Dedicated logic registers            ; 426                                            ;
 ;     -- I/O registers                        ; 0                                              ;
 ;                                             ;                                                ;
 ; I/O pins                                    ; 158                                            ;
@@ -296,8 +296,8 @@ agreement for further details.
 ;                                             ;                                                ;
 ; Maximum fan-out node                        ; VGA_Audio_PLL:p1|altpll:altpll_component|_clk0 ;
 ; Maximum fan-out                             ; 407                                            ;
-; Total fan-out                               ; 10915                                          ;
-; Average fan-out                             ; 4.42                                           ;
+; Total fan-out                               ; 10786                                          ;
+; Average fan-out                             ; 4.44                                           ;
 +---------------------------------------------+------------------------------------------------+
 
 
@@ -306,7 +306,7 @@ agreement for further details.
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                          ; Entity Name                  ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
-; |skeleton                                    ; 1387 (0)          ; 434 (0)      ; 2463744     ; 0            ; 0       ; 0         ; 158  ; 0            ; |skeleton                                                                                                                                                    ; skeleton                     ; work         ;
+; |skeleton                                    ; 1354 (0)          ; 426 (0)      ; 2463744     ; 0            ; 0       ; 0         ; 158  ; 0            ; |skeleton                                                                                                                                                    ; skeleton                     ; work         ;
 ;    |Hexadecimal_To_Seven_Segment:hex1|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex1                                                                                                                  ; Hexadecimal_To_Seven_Segment ; work         ;
 ;    |Hexadecimal_To_Seven_Segment:hex2|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex2                                                                                                                  ; Hexadecimal_To_Seven_Segment ; work         ;
 ;    |PS2_Interface:myps2|                     ; 41 (9)            ; 38 (8)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2                                                                                                                                ; PS2_Interface                ; work         ;
@@ -316,8 +316,8 @@ agreement for further details.
 ;    |VGA_Audio_PLL:p1|                        ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1                                                                                                                                   ; VGA_Audio_PLL                ; work         ;
 ;       |altpll:altpll_component|              ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1|altpll:altpll_component                                                                                                           ; altpll                       ; work         ;
 ;    |lcd:mylcd|                               ; 392 (392)         ; 278 (278)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|lcd:mylcd                                                                                                                                          ; lcd                          ; work         ;
-;    |vga_controller:vga_ins|                  ; 913 (179)         ; 97 (67)      ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins                                                                                                                             ; vga_controller               ; work         ;
-;       |bgGrid:bgGrid0|                       ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|bgGrid:bgGrid0                                                                                                              ; bgGrid                       ; work         ;
+;    |vga_controller:vga_ins|                  ; 880 (113)         ; 89 (59)      ; 2463744     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins                                                                                                                             ; vga_controller               ; work         ;
+;       |bgGrid:bgGrid0|                       ; 28 (28)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|bgGrid:bgGrid0                                                                                                              ; bgGrid                       ; work         ;
 ;       |img_data:img_data_inst|               ; 278 (0)           ; 6 (0)        ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst                                                                                                      ; img_data                     ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 278 (0)           ; 6 (0)        ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component                                                                      ; altsyncram                   ; work         ;
 ;             |altsyncram_ekc1:auto_generated| ; 278 (0)           ; 6 (6)        ; 2457600     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_ekc1:auto_generated                                       ; altsyncram_ekc1              ; work         ;
@@ -326,11 +326,11 @@ agreement for further details.
 ;       |img_index:img_index_inst|             ; 0 (0)             ; 0 (0)        ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_index:img_index_inst                                                                                                    ; img_index                    ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component                                                                    ; altsyncram                   ; work         ;
 ;             |altsyncram_pjc1:auto_generated| ; 0 (0)             ; 0 (0)        ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_pjc1:auto_generated                                     ; altsyncram_pjc1              ; work         ;
-;       |vgaAddrTranslater:ADDRtrans|          ; 407 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans                                                                                                 ; vgaAddrTranslater            ; work         ;
-;          |lpm_divide:Div0|                   ; 202 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0                                                                                 ; lpm_divide                   ; work         ;
-;             |lpm_divide_ikm:auto_generated|  ; 202 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0|lpm_divide_ikm:auto_generated                                                   ; lpm_divide_ikm               ; work         ;
-;                |sign_div_unsign_anh:divider| ; 202 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider                       ; sign_div_unsign_anh          ; work         ;
-;                   |alt_u_div_8af:divider|    ; 202 (202)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_8af:divider ; alt_u_div_8af                ; work         ;
+;       |vgaAddrTranslater:ADDRtrans|          ; 417 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans                                                                                                 ; vgaAddrTranslater            ; work         ;
+;          |lpm_divide:Div0|                   ; 212 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0                                                                                 ; lpm_divide                   ; work         ;
+;             |lpm_divide_ikm:auto_generated|  ; 212 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0|lpm_divide_ikm:auto_generated                                                   ; lpm_divide_ikm               ; work         ;
+;                |sign_div_unsign_anh:divider| ; 212 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider                       ; sign_div_unsign_anh          ; work         ;
+;                   |alt_u_div_8af:divider|    ; 212 (212)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_anh:divider|alt_u_div_8af:divider ; alt_u_div_8af                ; work         ;
 ;          |lpm_divide:Mod0|                   ; 205 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Mod0                                                                                 ; lpm_divide                   ; work         ;
 ;             |lpm_divide_lcm:auto_generated|  ; 205 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Mod0|lpm_divide_lcm:auto_generated                                                   ; lpm_divide_lcm               ; work         ;
 ;                |sign_div_unsign_anh:divider| ; 205 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Mod0|lpm_divide_lcm:auto_generated|sign_div_unsign_anh:divider                       ; sign_div_unsign_anh          ; work         ;
@@ -572,12 +572,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 434   ;
+; Total registers                              ; 426   ;
 ; Number of registers using Synchronous Clear  ; 42    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 319   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 321   ;
+; Number of registers using Clock Enable       ; 313   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -619,16 +619,11 @@ Encoding Type:  One-Hot
 ; lcd:mylcd|line2[3][5]                   ; 3       ;
 ; lcd:mylcd|line2[7][5]                   ; 3       ;
 ; lcd:mylcd|line2[5][5]                   ; 3       ;
-; vga_controller:vga_ins|x_squre[7]       ; 5       ;
-; vga_controller:vga_ins|x_squre[6]       ; 5       ;
-; vga_controller:vga_ins|x_squre[4]       ; 5       ;
-; vga_controller:vga_ins|x_squre[3]       ; 5       ;
-; vga_controller:vga_ins|x_squre[2]       ; 5       ;
-; vga_controller:vga_ins|y_squre[8]       ; 5       ;
-; vga_controller:vga_ins|y_squre[5]       ; 5       ;
-; vga_controller:vga_ins|y_squre[3]       ; 6       ;
-; vga_controller:vga_ins|y_squre[2]       ; 4       ;
-; Total number of inverted registers = 41 ;         ;
+; vga_controller:vga_ins|x_squre[6]       ; 4       ;
+; vga_controller:vga_ins|x_squre[4]       ; 3       ;
+; vga_controller:vga_ins|y_squre[8]       ; 4       ;
+; vga_controller:vga_ins|y_squre[6]       ; 3       ;
+; Total number of inverted registers = 36 ;         ;
 +-----------------------------------------+---------+
 
 
@@ -637,39 +632,39 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[5]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[4]                                                                     ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|bgr_data[17]                                                                           ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[7]                    ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[15][3]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[14][0]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[13][2]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[12][4]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[11][2]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[10][2]                                                                                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[9][4]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[8][4]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[7][1]                                                                                         ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[6]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[2]                                                                     ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |skeleton|vga_controller:vga_ins|bgr_data[15]                                                                           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[6]                    ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[15][0]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[14][6]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[13][3]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[12][1]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[11][4]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[10][6]                                                                                        ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[9][6]                                                                                         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[8][7]                                                                                         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[7][7]                                                                                         ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[6][4]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[5][1]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[4][4]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[3][1]                                                                                         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[5][3]                                                                                         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[4][6]                                                                                         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[3][0]                                                                                         ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[2][2]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[1][7]                                                                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[0][0]                                                                                         ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|lcd:mylcd|ptr[1]                                                                                              ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|lcd:mylcd|mstart                                                                                              ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|index[4]                                                                                            ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[1][4]                                                                                         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[0][1]                                                                                         ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|lcd:mylcd|ptr[0]                                                                                              ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|lcd:mylcd|cdone                                                                                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|index[2]                                                                                            ;
 ; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[8]          ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[12] ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[17]          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[3]                   ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[1]                        ;
-; 258:1              ; 5 bits    ; 860 LEs       ; 5 LEs                ; 855 LEs                ; Yes        ; |skeleton|vga_controller:vga_ins|x_squre[8]                                                                             ;
-; 258:1              ; 6 bits    ; 1032 LEs      ; 6 LEs                ; 1026 LEs               ; Yes        ; |skeleton|vga_controller:vga_ins|y_squre[0]                                                                             ;
-; 38:1               ; 8 bits    ; 200 LEs       ; 200 LEs              ; 0 LEs                  ; Yes        ; |skeleton|lcd:mylcd|lcd_data[5]                                                                                         ;
-; 258:1              ; 5 bits    ; 860 LEs       ; 5 LEs                ; 855 LEs                ; Yes        ; |skeleton|vga_controller:vga_ins|x_squre[3]                                                                             ;
-; 258:1              ; 4 bits    ; 688 LEs       ; 4 LEs                ; 684 LEs                ; Yes        ; |skeleton|vga_controller:vga_ins|y_squre[8]                                                                             ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[10] ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[4]           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[1]                   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[3]                        ;
+; 258:1              ; 4 bits    ; 688 LEs       ; 4 LEs                ; 684 LEs                ; Yes        ; |skeleton|vga_controller:vga_ins|x_squre[5]                                                                             ;
+; 258:1              ; 4 bits    ; 688 LEs       ; 4 LEs                ; 684 LEs                ; Yes        ; |skeleton|vga_controller:vga_ins|y_squre[4]                                                                             ;
+; 38:1               ; 8 bits    ; 200 LEs       ; 200 LEs              ; 0 LEs                  ; Yes        ; |skeleton|lcd:mylcd|lcd_data[2]                                                                                         ;
+; 258:1              ; 2 bits    ; 344 LEs       ; 2 LEs                ; 342 LEs                ; Yes        ; |skeleton|vga_controller:vga_ins|x_squre[4]                                                                             ;
+; 258:1              ; 2 bits    ; 344 LEs       ; 2 LEs                ; 342 LEs                ; Yes        ; |skeleton|vga_controller:vga_ins|y_squre[8]                                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1766,29 +1761,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Mod0 ;
-+------------------------+----------------+---------------------------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                                      ;
-+------------------------+----------------+---------------------------------------------------------------------------+
-; LPM_WIDTHN             ; 19             ; Untyped                                                                   ;
-; LPM_WIDTHD             ; 10             ; Untyped                                                                   ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                                   ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                                   ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                                   ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                                   ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                   ;
-; CBXI_PARAMETER         ; lpm_divide_lcm ; Untyped                                                                   ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                   ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                   ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                                ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                              ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                              ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                            ;
-+------------------------+----------------+---------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0 ;
 +------------------------+----------------+---------------------------------------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                                                      ;
@@ -1801,6 +1773,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                                   ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                   ;
 ; CBXI_PARAMETER         ; lpm_divide_ikm ; Untyped                                                                   ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                   ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                   ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                              ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                            ;
++------------------------+----------------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Mod0 ;
++------------------------+----------------+---------------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                                      ;
++------------------------+----------------+---------------------------------------------------------------------------+
+; LPM_WIDTHN             ; 19             ; Untyped                                                                   ;
+; LPM_WIDTHD             ; 10             ; Untyped                                                                   ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                                   ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                                   ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                                   ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                                   ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                   ;
+; CBXI_PARAMETER         ; lpm_divide_lcm ; Untyped                                                                   ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                   ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                   ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                                ;
@@ -2015,30 +2010,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 158                         ;
-; cycloneiii_ff         ; 434                         ;
+; cycloneiii_ff         ; 426                         ;
 ;     CLR               ; 46                          ;
 ;     CLR SCLR          ; 19                          ;
-;     ENA               ; 67                          ;
+;     ENA               ; 59                          ;
 ;     ENA CLR           ; 236                         ;
 ;     ENA CLR SCLR      ; 18                          ;
 ;     SCLR              ; 5                           ;
 ;     plain             ; 43                          ;
 ; cycloneiii_io_obuf    ; 2                           ;
-; cycloneiii_lcell_comb ; 1391                        ;
-;     arith             ; 226                         ;
-;         2 data inputs ; 98                          ;
-;         3 data inputs ; 128                         ;
-;     normal            ; 1165                        ;
+; cycloneiii_lcell_comb ; 1358                        ;
+;     arith             ; 196                         ;
+;         2 data inputs ; 94                          ;
+;         3 data inputs ; 102                         ;
+;     normal            ; 1162                        ;
 ;         0 data inputs ; 22                          ;
-;         1 data inputs ; 20                          ;
-;         2 data inputs ; 310                         ;
-;         3 data inputs ; 88                          ;
-;         4 data inputs ; 725                         ;
+;         1 data inputs ; 14                          ;
+;         2 data inputs ; 325                         ;
+;         3 data inputs ; 83                          ;
+;         4 data inputs ; 718                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 328                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 28.90                       ;
-; Average LUT depth     ; 9.31                        ;
+; Average LUT depth     ; 9.57                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2047,7 +2042,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -2057,60 +2052,62 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Dec 03 14:23:20 2020
+    Info: Processing started: Thu Dec 03 18:05:26 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12019): Can't analyze file -- file ../converter.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file vga_audio_pll.v
-    Info (12023): Found entity 1: VGA_Audio_PLL File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/VGA_Audio_PLL.v Line: 39
+    Info (12023): Found entity 1: VGA_Audio_PLL File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/VGA_Audio_PLL.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file reset_delay.v
-    Info (12023): Found entity 1: Reset_Delay File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/Reset_Delay.v Line: 1
+    Info (12023): Found entity 1: Reset_Delay File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/Reset_Delay.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file skeleton.v
-    Info (12023): Found entity 1: skeleton File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 1
+    Info (12023): Found entity 1: skeleton File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_interface.v
-    Info (12023): Found entity 1: PS2_Interface File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/PS2_Interface.v Line: 1
+    Info (12023): Found entity 1: PS2_Interface File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/PS2_Interface.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_controller.v
-    Info (12023): Found entity 1: PS2_Controller File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/PS2_Controller.v Line: 9
+    Info (12023): Found entity 1: PS2_Controller File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/PS2_Controller.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file processor.v
-    Info (12023): Found entity 1: processor File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/processor.v Line: 1
+    Info (12023): Found entity 1: processor File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/processor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
-    Info (12023): Found entity 1: pll File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/pll.v Line: 39
+    Info (12023): Found entity 1: pll File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/pll.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file lcd.sv
-    Info (12023): Found entity 1: lcd File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/lcd.sv Line: 1
+    Info (12023): Found entity 1: lcd File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/lcd.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file imem.v
-    Info (12023): Found entity 1: imem File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/imem.v Line: 39
+    Info (12023): Found entity 1: imem File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/imem.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file hexadecimal_to_seven_segment.v
-    Info (12023): Found entity 1: Hexadecimal_To_Seven_Segment File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/Hexadecimal_To_Seven_Segment.v Line: 9
+    Info (12023): Found entity 1: Hexadecimal_To_Seven_Segment File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/Hexadecimal_To_Seven_Segment.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
-    Info (12023): Found entity 1: dmem File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/dmem.v Line: 39
+    Info (12023): Found entity 1: dmem File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/dmem.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file altera_up_ps2_data_in.v
-    Info (12023): Found entity 1: Altera_UP_PS2_Data_In File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/Altera_UP_PS2_Data_In.v Line: 10
+    Info (12023): Found entity 1: Altera_UP_PS2_Data_In File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/Altera_UP_PS2_Data_In.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file altera_up_ps2_command_out.v
-    Info (12023): Found entity 1: Altera_UP_PS2_Command_Out File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/Altera_UP_PS2_Command_Out.v Line: 10
+    Info (12023): Found entity 1: Altera_UP_PS2_Command_Out File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/Altera_UP_PS2_Command_Out.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.v
-    Info (12023): Found entity 1: vga_controller File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v Line: 1
+    Info (12023): Found entity 1: vga_controller File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vga_controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file video_sync_generator.v
-    Info (12023): Found entity 1: video_sync_generator File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/video_sync_generator.v Line: 1
+    Info (12023): Found entity 1: video_sync_generator File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/video_sync_generator.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file img_index.v
-    Info (12023): Found entity 1: img_index File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/img_index.v Line: 40
+    Info (12023): Found entity 1: img_index File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/img_index.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file img_data.v
-    Info (12023): Found entity 1: img_data File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/img_data.v Line: 39
+    Info (12023): Found entity 1: img_data File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/img_data.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file vgaaddrtranslater.v
-    Info (12023): Found entity 1: vgaAddrTranslater File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vgaAddrTranslater.v Line: 1
+    Info (12023): Found entity 1: vgaAddrTranslater File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vgaAddrTranslater.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bggrid.v
-    Info (12023): Found entity 1: bgGrid File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/bgGrid.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(59): created implicit net for "inclock" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 59
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(90): created implicit net for "DLY_RST" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 90
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(91): created implicit net for "VGA_CTRL_CLK" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 91
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(91): created implicit net for "AUD_CTRL_CLK" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 91
-Warning (10236): Verilog HDL Implicit Net warning at processor.v(29): created implicit net for "debug_data" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/processor.v Line: 29
+    Info (12023): Found entity 1: bgGrid File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/bgGrid.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file moveblock.v
+    Info (12023): Found entity 1: moveBlock File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/moveBlock.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(59): created implicit net for "inclock" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 59
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(90): created implicit net for "DLY_RST" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 90
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(91): created implicit net for "VGA_CTRL_CLK" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 91
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(91): created implicit net for "AUD_CTRL_CLK" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 91
+Warning (10236): Verilog HDL Implicit Net warning at processor.v(29): created implicit net for "debug_data" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/processor.v Line: 29
 Info (12127): Elaborating entity "skeleton" for the top level hierarchy
-Warning (10034): Output port "VGA_SYNC" at skeleton.v(27) has no driver File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 27
-Info (12128): Elaborating entity "pll" for hierarchy "pll:div" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 59
-Info (12128): Elaborating entity "altpll" for hierarchy "pll:div|altpll:altpll_component" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/pll.v Line: 90
-Info (12130): Elaborated megafunction instantiation "pll:div|altpll:altpll_component" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/pll.v Line: 90
-Info (12133): Instantiated megafunction "pll:div|altpll:altpll_component" with the following parameter: File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/pll.v Line: 90
+Warning (10034): Output port "VGA_SYNC" at skeleton.v(27) has no driver File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 27
+Info (12128): Elaborating entity "pll" for hierarchy "pll:div" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 59
+Info (12128): Elaborating entity "altpll" for hierarchy "pll:div|altpll:altpll_component" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/pll.v Line: 90
+Info (12130): Elaborated megafunction instantiation "pll:div|altpll:altpll_component" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/pll.v Line: 90
+Info (12133): Instantiated megafunction "pll:div|altpll:altpll_component" with the following parameter: File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/pll.v Line: 90
     Info (12134): Parameter "clk0_divide_by" = "5"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "2"
@@ -2162,13 +2159,13 @@ Info (12133): Instantiated megafunction "pll:div|altpll:altpll_component" with t
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
-    Info (12023): Found entity 1: pll_altpll File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/pll_altpll.v Line: 30
-Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:div|altpll:altpll_component|pll_altpll:auto_generated" File: c:/altera_lite/16.0/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "processor" for hierarchy "processor:myprocessor" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 66
-Info (12128): Elaborating entity "dmem" for hierarchy "processor:myprocessor|dmem:mydmem" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/processor.v Line: 32
-Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/dmem.v Line: 85
-Info (12130): Elaborated megafunction instantiation "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/dmem.v Line: 85
-Info (12133): Instantiated megafunction "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/dmem.v Line: 85
+    Info (12023): Found entity 1: pll_altpll File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/pll_altpll.v Line: 30
+Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:div|altpll:altpll_component|pll_altpll:auto_generated" File: d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/altpll.tdf Line: 898
+Info (12128): Elaborating entity "processor" for hierarchy "processor:myprocessor" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 66
+Info (12128): Elaborating entity "dmem" for hierarchy "processor:myprocessor|dmem:mydmem" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/processor.v Line: 32
+Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/dmem.v Line: 85
+Info (12130): Elaborated megafunction instantiation "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/dmem.v Line: 85
+Info (12133): Instantiated megafunction "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" with the following parameter: File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/dmem.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "NORMAL"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "dmem.mif"
@@ -2184,12 +2181,12 @@ Info (12133): Instantiated megafunction "processor:myprocessor|dmem:mydmem|altsy
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8vc1.tdf
-    Info (12023): Found entity 1: altsyncram_8vc1 File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_8vc1" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated" File: c:/altera_lite/16.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "imem" for hierarchy "processor:myprocessor|imem:myimem" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/processor.v Line: 38
-Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/imem.v Line: 84
-Info (12130): Elaborated megafunction instantiation "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/imem.v Line: 84
-Info (12133): Instantiated megafunction "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/imem.v Line: 84
+    Info (12023): Found entity 1: altsyncram_8vc1 File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_8vc1" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated" File: d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "imem" for hierarchy "processor:myprocessor|imem:myimem" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/processor.v Line: 38
+Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/imem.v Line: 84
+Info (12130): Elaborated megafunction instantiation "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/imem.v Line: 84
+Info (12133): Instantiated megafunction "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" with the following parameter: File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/imem.v Line: 84
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "imem.mif"
@@ -2204,21 +2201,21 @@ Info (12133): Instantiated megafunction "processor:myprocessor|imem:myimem|altsy
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2m81.tdf
-    Info (12023): Found entity 1: altsyncram_2m81 File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_2m81" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated" File: c:/altera_lite/16.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (287013): Variable or input pin "clocken0" is defined but never used. File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 32
-Info (12128): Elaborating entity "PS2_Interface" for hierarchy "PS2_Interface:myps2" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 69
-Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/PS2_Interface.v Line: 26
-Info (12128): Elaborating entity "Altera_UP_PS2_Data_In" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/PS2_Controller.v Line: 248
-Info (12128): Elaborating entity "Altera_UP_PS2_Command_Out" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/PS2_Controller.v Line: 268
-Info (12128): Elaborating entity "lcd" for hierarchy "lcd:mylcd" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 72
-Info (12128): Elaborating entity "Hexadecimal_To_Seven_Segment" for hierarchy "Hexadecimal_To_Seven_Segment:hex1" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 75
-Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:r0" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 90
-Warning (10230): Verilog HDL assignment warning at Reset_Delay.v(10): truncated value with size 32 to match size of target (20) File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/Reset_Delay.v Line: 10
-Info (12128): Elaborating entity "VGA_Audio_PLL" for hierarchy "VGA_Audio_PLL:p1" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 91
-Info (12128): Elaborating entity "altpll" for hierarchy "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/VGA_Audio_PLL.v Line: 107
-Info (12130): Elaborated megafunction instantiation "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/VGA_Audio_PLL.v Line: 107
-Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_component" with the following parameter: File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/VGA_Audio_PLL.v Line: 107
+    Info (12023): Found entity 1: altsyncram_2m81 File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_2m81" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated" File: d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Warning (287013): Variable or input pin "clocken0" is defined but never used. File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 32
+Info (12128): Elaborating entity "PS2_Interface" for hierarchy "PS2_Interface:myps2" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 69
+Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/PS2_Interface.v Line: 26
+Info (12128): Elaborating entity "Altera_UP_PS2_Data_In" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/PS2_Controller.v Line: 248
+Info (12128): Elaborating entity "Altera_UP_PS2_Command_Out" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/PS2_Controller.v Line: 268
+Info (12128): Elaborating entity "lcd" for hierarchy "lcd:mylcd" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 72
+Info (12128): Elaborating entity "Hexadecimal_To_Seven_Segment" for hierarchy "Hexadecimal_To_Seven_Segment:hex1" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 75
+Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:r0" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 90
+Warning (10230): Verilog HDL assignment warning at Reset_Delay.v(10): truncated value with size 32 to match size of target (20) File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/Reset_Delay.v Line: 10
+Info (12128): Elaborating entity "VGA_Audio_PLL" for hierarchy "VGA_Audio_PLL:p1" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 91
+Info (12128): Elaborating entity "altpll" for hierarchy "VGA_Audio_PLL:p1|altpll:altpll_component" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/VGA_Audio_PLL.v Line: 107
+Info (12130): Elaborated megafunction instantiation "VGA_Audio_PLL:p1|altpll:altpll_component" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/VGA_Audio_PLL.v Line: 107
+Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_component" with the following parameter: File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/VGA_Audio_PLL.v Line: 107
     Info (12134): Parameter "clk0_divide_by" = "2"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "1"
@@ -2277,19 +2274,18 @@ Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_componen
     Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
-Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 102
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(68): truncated value with size 32 to match size of target (19) File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v Line: 68
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(90): truncated value with size 32 to match size of target (10) File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v Line: 90
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(95): truncated value with size 32 to match size of target (10) File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v Line: 95
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(100): truncated value with size 32 to match size of target (10) File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v Line: 100
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(105): truncated value with size 32 to match size of target (10) File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v Line: 105
-Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v Line: 58
-Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(77): truncated value with size 32 to match size of target (10) File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/video_sync_generator.v Line: 77
-Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(80): truncated value with size 32 to match size of target (11) File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/video_sync_generator.v Line: 80
-Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v Line: 77
-Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/img_data.v Line: 81
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/img_data.v Line: 81
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/img_data.v Line: 81
+Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 102
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(102): truncated value with size 32 to match size of target (10) File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vga_controller.v Line: 102
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(107): truncated value with size 32 to match size of target (10) File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vga_controller.v Line: 107
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(112): truncated value with size 32 to match size of target (10) File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vga_controller.v Line: 112
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(117): truncated value with size 32 to match size of target (10) File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vga_controller.v Line: 117
+Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vga_controller.v Line: 62
+Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(77): truncated value with size 32 to match size of target (10) File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/video_sync_generator.v Line: 77
+Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(80): truncated value with size 32 to match size of target (11) File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/video_sync_generator.v Line: 80
+Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vga_controller.v Line: 81
+Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/img_data.v Line: 81
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/img_data.v Line: 81
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" with the following parameter: File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/img_data.v Line: 81
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -2306,21 +2302,21 @@ Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_dat
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ekc1.tdf
-    Info (12023): Found entity 1: altsyncram_ekc1 File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_ekc1.tdf Line: 32
-Info (12128): Elaborating entity "altsyncram_ekc1" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_ekc1:auto_generated" File: c:/altera_lite/16.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_ekc1 File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_ekc1.tdf Line: 32
+Info (12128): Elaborating entity "altsyncram_ekc1" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_ekc1:auto_generated" File: d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_aaa.tdf
-    Info (12023): Found entity 1: decode_aaa File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/decode_aaa.tdf Line: 23
-Info (12128): Elaborating entity "decode_aaa" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_ekc1:auto_generated|decode_aaa:rden_decode" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_ekc1.tdf Line: 40
+    Info (12023): Found entity 1: decode_aaa File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/decode_aaa.tdf Line: 23
+Info (12128): Elaborating entity "decode_aaa" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_ekc1:auto_generated|decode_aaa:rden_decode" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_ekc1.tdf Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_1pb.tdf
-    Info (12023): Found entity 1: mux_1pb File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/mux_1pb.tdf Line: 23
-Info (12128): Elaborating entity "mux_1pb" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_ekc1:auto_generated|mux_1pb:mux2" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_ekc1.tdf Line: 41
-Info (12128): Elaborating entity "vgaAddrTranslater" for hierarchy "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v Line: 81
-Warning (10230): Verilog HDL assignment warning at vgaAddrTranslater.v(6): truncated value with size 19 to match size of target (10) File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vgaAddrTranslater.v Line: 6
-Warning (10230): Verilog HDL assignment warning at vgaAddrTranslater.v(7): truncated value with size 19 to match size of target (10) File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vgaAddrTranslater.v Line: 7
-Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v Line: 127
-Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/img_index.v Line: 82
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/img_index.v Line: 82
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/img_index.v Line: 82
+    Info (12023): Found entity 1: mux_1pb File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/mux_1pb.tdf Line: 23
+Info (12128): Elaborating entity "mux_1pb" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_ekc1:auto_generated|mux_1pb:mux2" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_ekc1.tdf Line: 41
+Info (12128): Elaborating entity "vgaAddrTranslater" for hierarchy "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vga_controller.v Line: 85
+Warning (10230): Verilog HDL assignment warning at vgaAddrTranslater.v(6): truncated value with size 19 to match size of target (10) File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vgaAddrTranslater.v Line: 6
+Warning (10230): Verilog HDL assignment warning at vgaAddrTranslater.v(7): truncated value with size 19 to match size of target (10) File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vgaAddrTranslater.v Line: 7
+Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vga_controller.v Line: 139
+Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/img_index.v Line: 82
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/img_index.v Line: 82
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" with the following parameter: File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/img_index.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -2337,230 +2333,230 @@ Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_in
     Info (12134): Parameter "width_a" = "24"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_pjc1.tdf
-    Info (12023): Found entity 1: altsyncram_pjc1 File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_pjc1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_pjc1" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_pjc1:auto_generated" File: c:/altera_lite/16.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "bgGrid" for hierarchy "vga_controller:vga_ins|bgGrid:bgGrid0" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v Line: 134
-Warning (10230): Verilog HDL assignment warning at bgGrid.v(9): truncated value with size 32 to match size of target (1) File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/bgGrid.v Line: 9
+    Info (12023): Found entity 1: altsyncram_pjc1 File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_pjc1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_pjc1" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_pjc1:auto_generated" File: d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "bgGrid" for hierarchy "vga_controller:vga_ins|bgGrid:bgGrid0" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vga_controller.v Line: 146
+Warning (10230): Verilog HDL assignment warning at bgGrid.v(9): truncated value with size 32 to match size of target (1) File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/bgGrid.v Line: 9
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[0]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 36
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[1]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 56
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[2]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 76
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[3]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 96
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[4]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 116
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[5]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 136
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[6]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 156
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[7]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 176
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[8]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 196
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[9]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 216
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[10]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 236
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[11]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 256
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[12]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 276
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[13]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 296
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[14]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 316
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[15]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 336
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[16]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 356
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[17]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 376
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[18]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 396
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[19]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 416
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[20]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 436
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[21]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 456
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[22]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 476
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[23]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 496
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[24]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 516
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[25]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 536
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[26]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 556
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[27]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 576
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[28]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 596
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[29]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 616
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[30]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 636
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[31]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 656
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[0]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 37
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[1]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 61
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[2]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 85
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[3]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 109
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[4]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 133
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[5]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 157
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[6]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 181
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[7]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 205
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[8]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 229
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[9]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 253
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[10]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 277
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[11]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 301
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[12]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 325
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[13]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 349
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[14]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 373
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[15]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 397
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[16]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 421
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[17]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 445
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[18]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 469
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[19]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 493
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[20]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 517
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[21]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 541
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[22]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 565
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[23]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 589
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[24]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 613
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[25]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 637
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[26]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 661
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[27]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 685
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[28]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 709
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[29]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 733
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[30]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 757
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[31]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 781
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[0]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 36
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[1]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 56
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[2]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 76
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[3]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 96
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[4]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 116
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[5]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 136
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[6]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 156
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[7]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 176
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[8]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 196
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[9]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 216
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[10]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 236
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[11]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 256
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[12]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 276
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[13]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 296
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[14]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 316
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[15]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 336
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[16]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 356
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[17]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 376
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[18]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 396
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[19]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 416
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[20]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 436
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[21]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 456
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[22]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 476
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[23]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 496
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[24]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 516
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[25]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 536
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[26]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 556
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[27]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 576
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[28]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 596
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[29]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 616
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[30]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 636
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[31]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_2m81.tdf Line: 656
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[0]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 37
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[1]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 61
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[2]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 85
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[3]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 109
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[4]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 133
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[5]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 157
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[6]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 181
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[7]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 205
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[8]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 229
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[9]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 253
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[10]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 277
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[11]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 301
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[12]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 325
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[13]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 349
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[14]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 373
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[15]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 397
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[16]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 421
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[17]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 445
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[18]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 469
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[19]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 493
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[20]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 517
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[21]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 541
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[22]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 565
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[23]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 589
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[24]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 613
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[25]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 637
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[26]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 661
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[27]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 685
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[28]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 709
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[29]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 733
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[30]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 757
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[31]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/altsyncram_8vc1.tdf Line: 781
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
-        Warning (14320): Synthesized away node "pll:div|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0]" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/pll_altpll.v Line: 78
+        Warning (14320): Synthesized away node "pll:div|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0]" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/pll_altpll.v Line: 78
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|Mod0" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vgaAddrTranslater.v Line: 7
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|Div0" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vgaAddrTranslater.v Line: 6
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Mod0" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vgaAddrTranslater.v Line: 7
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Mod0" with the following parameter: File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vgaAddrTranslater.v Line: 7
-    Info (12134): Parameter "LPM_WIDTHN" = "19"
-    Info (12134): Parameter "LPM_WIDTHD" = "10"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_lcm.tdf
-    Info (12023): Found entity 1: lpm_divide_lcm File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/lpm_divide_lcm.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_anh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_anh File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/sign_div_unsign_anh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_8af.tdf
-    Info (12023): Found entity 1: alt_u_div_8af File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/alt_u_div_8af.tdf Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/add_sub_7pc.tdf Line: 23
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/add_sub_8pc.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vgaAddrTranslater.v Line: 6
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0" with the following parameter: File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vgaAddrTranslater.v Line: 6
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|Div0" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vgaAddrTranslater.v Line: 6
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|Mod0" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vgaAddrTranslater.v Line: 7
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vgaAddrTranslater.v Line: 6
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Div0" with the following parameter: File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vgaAddrTranslater.v Line: 6
     Info (12134): Parameter "LPM_WIDTHN" = "19"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ikm.tdf
-    Info (12023): Found entity 1: lpm_divide_ikm File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/db/lpm_divide_ikm.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_ikm File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/lpm_divide_ikm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_anh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_anh File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/sign_div_unsign_anh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_8af.tdf
+    Info (12023): Found entity 1: alt_u_div_8af File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/alt_u_div_8af.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/add_sub_7pc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/add_sub_8pc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Mod0" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vgaAddrTranslater.v Line: 7
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|vgaAddrTranslater:ADDRtrans|lpm_divide:Mod0" with the following parameter: File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vgaAddrTranslater.v Line: 7
+    Info (12134): Parameter "LPM_WIDTHN" = "19"
+    Info (12134): Parameter "LPM_WIDTHD" = "10"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_lcm.tdf
+    Info (12023): Found entity 1: lpm_divide_lcm File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/db/lpm_divide_lcm.tdf Line: 25
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/lcd.sv Line: 48
+Info (13000): Registers with preset signals will power-up high File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/lcd.sv Line: 48
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "debug_data_in[0]" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[1]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[2]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[3]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[4]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[5]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[6]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[7]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[8]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[9]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[10]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[11]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[12]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[13]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[14]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[15]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[16]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[17]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[18]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[19]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[20]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[21]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[22]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[23]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[24]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[25]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[26]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[27]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[28]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[29]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[30]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_data_in[31]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 44
-    Warning (13410): Pin "debug_addr[0]" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 45
-    Warning (13410): Pin "debug_addr[1]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 45
-    Warning (13410): Pin "debug_addr[2]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 45
-    Warning (13410): Pin "debug_addr[3]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 45
-    Warning (13410): Pin "debug_addr[4]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 45
-    Warning (13410): Pin "debug_addr[5]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 45
-    Warning (13410): Pin "debug_addr[6]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 45
-    Warning (13410): Pin "debug_addr[7]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 45
-    Warning (13410): Pin "debug_addr[8]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 45
-    Warning (13410): Pin "debug_addr[9]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 45
-    Warning (13410): Pin "debug_addr[10]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 45
-    Warning (13410): Pin "debug_addr[11]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 45
-    Warning (13410): Pin "leds[0]" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 42
-    Warning (13410): Pin "leds[1]" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 42
-    Warning (13410): Pin "leds[2]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 42
-    Warning (13410): Pin "leds[3]" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 42
-    Warning (13410): Pin "leds[4]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 42
-    Warning (13410): Pin "leds[5]" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 42
-    Warning (13410): Pin "leds[6]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 42
-    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 42
-    Warning (13410): Pin "lcd_rw" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 41
-    Warning (13410): Pin "lcd_on" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 41
-    Warning (13410): Pin "lcd_blon" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 41
-    Warning (13410): Pin "seg3[0]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg3[1]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg3[2]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg3[3]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg3[4]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg3[5]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg3[6]" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg4[0]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg4[1]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg4[2]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg4[3]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg4[4]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg4[5]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg4[6]" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg5[0]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg5[1]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg5[2]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg5[3]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg5[4]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg5[5]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg5[6]" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg6[0]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg6[1]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg6[2]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg6[3]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg6[4]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg6[5]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg6[6]" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg7[0]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg7[1]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg7[2]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg7[3]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg7[4]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg7[5]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg7[6]" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg8[0]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg8[1]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg8[2]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg8[3]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg8[4]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg8[5]" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "seg8[6]" is stuck at VCC File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 43
-    Warning (13410): Pin "VGA_SYNC" is stuck at GND File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 27
+    Warning (13410): Pin "debug_data_in[0]" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[1]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[2]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[3]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[4]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[5]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[6]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[7]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[8]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[9]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[10]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[11]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[12]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[13]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[14]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[15]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[16]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[17]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[18]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[19]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[20]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[21]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[22]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[23]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[24]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[25]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[26]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[27]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[28]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[29]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[30]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_data_in[31]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 44
+    Warning (13410): Pin "debug_addr[0]" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 45
+    Warning (13410): Pin "debug_addr[1]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 45
+    Warning (13410): Pin "debug_addr[2]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 45
+    Warning (13410): Pin "debug_addr[3]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 45
+    Warning (13410): Pin "debug_addr[4]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 45
+    Warning (13410): Pin "debug_addr[5]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 45
+    Warning (13410): Pin "debug_addr[6]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 45
+    Warning (13410): Pin "debug_addr[7]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 45
+    Warning (13410): Pin "debug_addr[8]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 45
+    Warning (13410): Pin "debug_addr[9]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 45
+    Warning (13410): Pin "debug_addr[10]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 45
+    Warning (13410): Pin "debug_addr[11]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 45
+    Warning (13410): Pin "leds[0]" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 42
+    Warning (13410): Pin "leds[1]" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 42
+    Warning (13410): Pin "leds[2]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 42
+    Warning (13410): Pin "leds[3]" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 42
+    Warning (13410): Pin "leds[4]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 42
+    Warning (13410): Pin "leds[5]" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 42
+    Warning (13410): Pin "leds[6]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 42
+    Warning (13410): Pin "leds[7]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 42
+    Warning (13410): Pin "lcd_rw" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 41
+    Warning (13410): Pin "lcd_on" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 41
+    Warning (13410): Pin "lcd_blon" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 41
+    Warning (13410): Pin "seg3[0]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg3[1]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg3[2]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg3[3]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg3[4]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg3[5]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg3[6]" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg4[0]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg4[1]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg4[2]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg4[3]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg4[4]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg4[5]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg4[6]" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg5[0]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg5[1]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg5[2]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg5[3]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg5[4]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg5[5]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg5[6]" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg6[0]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg6[1]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg6[2]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg6[3]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg6[4]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg6[5]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg6[6]" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg7[0]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg7[1]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg7[2]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg7[3]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg7[4]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg7[5]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg7[6]" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg8[0]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg8[1]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg8[2]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg8[3]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg8[4]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg8[5]" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "seg8[6]" is stuck at VCC File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 43
+    Warning (13410): Pin "VGA_SYNC" is stuck at GND File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 27
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 17 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (15897): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: c:/altera_lite/16.0/quartus/libraries/megafunctions/altpll.tdf Line: 921
-Warning (15899): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: c:/altera_lite/16.0/quartus/libraries/megafunctions/altpll.tdf Line: 921
+Warning (15897): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/altpll.tdf Line: 921
+Warning (15899): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: d:/duke/software/quartus/altera_lite_16.0/quartus/libraries/megafunctions/altpll.tdf Line: 921
 Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "VGA_up" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 34
-    Warning (15610): No output dependent on input pin "VGA_down" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 34
-    Warning (15610): No output dependent on input pin "VGA_left" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 34
-    Warning (15610): No output dependent on input pin "VGA_right" File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/skeleton.v Line: 34
-Info (21057): Implemented 2014 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "VGA_up" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 34
+    Warning (15610): No output dependent on input pin "VGA_down" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 34
+    Warning (15610): No output dependent on input pin "VGA_left" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 34
+    Warning (15610): No output dependent on input pin "VGA_right" File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/skeleton.v Line: 34
+Info (21057): Implemented 1981 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 150 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 1527 logic cells
+    Info (21061): Implemented 1494 logic cells
     Info (21064): Implemented 328 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 196 warnings
-    Info: Peak virtual memory: 5043 megabytes
-    Info: Processing ended: Thu Dec 03 14:23:33 2020
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:24
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 195 warnings
+    Info: Peak virtual memory: 5039 megabytes
+    Info: Processing ended: Thu Dec 03 18:05:47 2020
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:38
 
 

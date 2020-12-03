@@ -14,12 +14,13 @@ input iRST_n;
 input iVGA_CLK;
 input [7: 0] ps2_out;
 input ps2_key_pressed;
-//// set const value for UP, DOWN, LEFT, RIGHT 
-localparam LEFT = 8'h6b;
-localparam RIGHT = 8'h74;
-localparam UP = 8'h75;
-localparam DOWN = 8'h72;
 
+//// set const value for UP, DOWN, LEFT, RIGHT 
+	localparam LEFT = 8'h6b;
+	localparam RIGHT = 8'h74;
+	localparam UP = 8'h75;
+	localparam DOWN = 8'h72;
+	
 output reg oBLANK_n;
 output reg oHS;
 output reg oVS;
@@ -33,7 +34,8 @@ reg [23:0] bgr_data;
 reg [18:0] count;
 reg sel; //use to choose betwen the background and the squre in mux
 wire [9:0] x,y; //x rows, y columns
-reg [9:0] x_squre, y_squre;  //coordinates of the top left corner of the squre, with length of 40
+reg  [9:0] x_squre, y_squre;  //coordinates of the top left corner of the squre, with length of 40
+
 wire VGA_CLK_n;
 wire [7:0] index;
 wire [23:0] bgr_data_raw;
@@ -42,12 +44,14 @@ wire cBLANK_n,cHS,cVS,rst;
 
 wire backedge;			//enable background's edge display
 
+
 initial 
 begin
-	x_squre = 10'd220;
-	y_squre = 10'd300;
+	x_squre = 10'd80;
+	y_squre = 10'd320;
 	sel=0;
 end
+
 
 ////
 assign rst = ~iRST_n;
@@ -65,7 +69,7 @@ begin
   else if (cHS==1'b0 && cVS==1'b0)
      ADDR<=19'd0;
   else if (cBLANK_n==1'b1)
-     ADDR<=ADDR+1;
+     ADDR<=ADDR+19'd1;
 end
 //////////////////////////
 //////INDEX addr.
@@ -82,38 +86,39 @@ vgaAddrTranslater ADDRtrans(.ADDR(ADDR), .x(x), .y(y));
 
 //////Add switch-input logic here
 
-//MOVE THE SQUARE	
-always@(posedge ps2_key_pressed) begin
-  case (ps2_out)
-	UP: begin
-	  if(x_squre > 0)  begin
-	  	x_squre <= x_squre - 5;
-	  end
+//keyboard move the block
+
+	always@(posedge ps2_key_pressed) begin
+	  case (ps2_out)
+		UP: begin
+		  if(x_squre > 80)  begin
+			x_squre = x_squre - 16;
+		  end
+		end
+		DOWN: begin
+		  if(x_squre < 400-16) begin
+			x_squre = x_squre + 16;
+		  end
+		end
+		LEFT: begin
+		  if(y_squre > 240) begin
+			y_squre = y_squre - 16;
+		  end
+		end
+		RIGHT: begin
+		  if(y_squre < 400-16) begin
+			y_squre = y_squre + 16;
+		  end
+		end
+	  endcase
 	end
-	DOWN: begin
-	  if(x_squre < 427) begin
-	  	x_squre <= x_squre + 5;
-	  end
-	end
-	LEFT: begin
-	  if(y_squre > 0) begin
-	  	y_squre <= y_squre - 5;
-	  end
-	end
-	RIGHT: begin
-	  if(y_squre < 600) begin
-	  	y_squre <= y_squre + 5;
-	  end
-	end
-  endcase
-end
 
 //choose whether it is background or the squre
 always@(posedge iVGA_CLK,negedge iRST_n)
 begin
 	if(!iRST_n)
 		sel <= 1'b0;
-	else if(x>=x_squre&&x<=x_squre+10'd53&&y>=y_squre&&y<=y_squre+10'd40)
+	else if(x>x_squre&&x<x_squre+10'd16&&y>=y_squre&&y<y_squre+10'd16-1)
 		sel <= 1'b1;
 	else 
 		sel <= 1'b0;
