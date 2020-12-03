@@ -3779,18 +3779,19 @@ ps2_out[4] => Decoder0.IN3
 ps2_out[5] => Decoder0.IN2
 ps2_out[6] => Decoder0.IN1
 ps2_out[7] => Decoder0.IN0
-ps2_key_pressed => y_squre[4].CLK
-ps2_key_pressed => y_squre[5].CLK
-ps2_key_pressed => y_squre[6].CLK
-ps2_key_pressed => y_squre[7].CLK
-ps2_key_pressed => y_squre[8].CLK
-ps2_key_pressed => y_squre[9].CLK
-ps2_key_pressed => x_squre[4].CLK
-ps2_key_pressed => x_squre[5].CLK
-ps2_key_pressed => x_squre[6].CLK
-ps2_key_pressed => x_squre[7].CLK
-ps2_key_pressed => x_squre[8].CLK
-ps2_key_pressed => x_squre[9].CLK
+ps2_key_pressed => x_squre.OUTPUTSELECT
+ps2_key_pressed => x_squre.OUTPUTSELECT
+ps2_key_pressed => x_squre.OUTPUTSELECT
+ps2_key_pressed => x_squre.OUTPUTSELECT
+ps2_key_pressed => x_squre.OUTPUTSELECT
+ps2_key_pressed => x_squre.OUTPUTSELECT
+ps2_key_pressed => y_squre.OUTPUTSELECT
+ps2_key_pressed => y_squre.OUTPUTSELECT
+ps2_key_pressed => y_squre.OUTPUTSELECT
+ps2_key_pressed => y_squre.OUTPUTSELECT
+ps2_key_pressed => y_squre.OUTPUTSELECT
+ps2_key_pressed => y_squre.OUTPUTSELECT
+ps2_key_pressed => key_pressed.DATAIN
 
 
 |skeleton|vga_controller:vga_ins|video_sync_generator:LTM_ins
