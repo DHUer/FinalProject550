@@ -1,0 +1,9 @@
+module vgaAddrTranslater(ADDR, x, y);
+
+input [18:0] ADDR;
+output x, y;
+
+assign x = ADDR / 10'd640;
+assign y = ADDR % 10'd640;
+
+endmodule

@@ -1,0 +1,11 @@
+module bgGrid(
+		input [9:0] x, y,
+		output backedge
+		);
+		
+		parameter left=239;
+		parameter right=401;
+		
+		assign backedge = (x==239||x==401) ? 1:0;
+		
+endmodule
