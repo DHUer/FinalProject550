@@ -1,0 +1,9 @@
+module getInnerOrEdge(
+    input [9: 0]x,
+    input [9: 0]y,
+    input [9: 0]x_shape,
+    input [9: 0]y_shape,
+    input [8: 0]shape_unit,
+    output isInner,
+    output isEdge
+)

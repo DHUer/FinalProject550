@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at vga_controller.v(62): always construct contains both blocking and non-blocking assignments File: D:/duke/software/quartus/final project/FinalProject550/skeleton_restored/vga_controller.v Line: 62
+Warning (10268): Verilog HDL information at vga_controller.v(71): always construct contains both blocking and non-blocking assignments File: C:/Users/wling/Documents/ECE550_final/finalProject550/skeleton_restored/vga_controller.v Line: 71
