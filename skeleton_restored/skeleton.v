@@ -55,6 +55,11 @@ module skeleton(resetn,
 	wire			 ps2_key_pressed;
 	wire	[7:0]	 ps2_out;	
 	
+	//modified: dmem 2 port
+	wire[11:0] address_a, address_b;
+	wire[31:0] data_a, data_b,q_a,q_b;
+	wire wren_a, wren_b;
+	
 	// clock divider (by 5, i.e., 10 MHz)
 	pll div(CLOCK_50,inclock);
 	assign clock = CLOCK_50;
@@ -63,7 +68,32 @@ module skeleton(resetn,
 	//assign clock = inclock;
 	
 	// your processor
-	processor myprocessor(clock, ~resetn, ps2_key_pressed, ps2_out, lcd_write_en, lcd_write_data, debug_data_in, debug_addr);
+	wire newps2;
+	wire processor_clk;
+	div div0(clock, processor_clk);
+	processor myprocessor(processor_clk, 
+								 ~resetn, 
+								 ps2_key_pressed, 
+								 newps2, 
+								 lcd_write_en, 
+								 lcd_write_data, 
+								 q_a, 
+								 address_a, 
+								 data_a, 
+								 wren_a);
+	
+	//dmem 2 ports
+	//a: processor
+	//b: vga 
+	dmem2 d0( .address_a(address_a), 
+				 .address_b(address_b), 
+				 .clock(clock), 
+				 .data_a(data_a), 
+				 .data_b(data_b), 
+				 .wren_a(wren_a), 
+				 .wren_b(1'b0), 
+				 .q_a(q_a), 
+				 .q_b(q_b) );
 	
 	// keyboard controller
 	PS2_Interface myps2(clock, resetn, ps2_clock, ps2_data, ps2_key_data, ps2_key_pressed, ps2_out);
@@ -97,9 +127,35 @@ module skeleton(resetn,
 								 .b_data(VGA_B),
 								 .g_data(VGA_G),
 								 .r_data(VGA_R),
+								 
 								 .ps2_out(ps2_key_data),
-								 .ps2_key_pressed(ps2_key_pressed)
+								 .ps2_key_pressed(ps2_key_pressed),								 
+								 .vga_addr(address_b),
+								 .vga_value(q_b)
 								 );
 	
 	
+endmodule
+
+
+module div(in_div2, out_div2);
+  input in_div2;
+  output reg out_div2;
+  
+	reg [28:0] counter;
+	
+  initial begin
+    out_div2 <= 1'b0;
+  end
+   
+  // counter
+	always@(posedge in_div2) begin
+		if (counter == 3000000) begin
+			 counter <= 0;
+			 out_div2 <= ~out_div2;
+		end
+		else begin
+			 counter = counter + 1;
+		end
+	end
 endmodule

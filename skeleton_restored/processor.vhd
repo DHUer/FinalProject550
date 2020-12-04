@@ -9,7 +9,12 @@ ENTITY processor IS
     PORT (	clock, reset	: IN STD_LOGIC;
 			keyboard_in	: IN STD_LOGIC_VECTOR(31 downto 0);
 			keyboard_ack, lcd_write	: OUT STD_LOGIC;
-			lcd_data	: OUT STD_LOGIC_VECTOR(31 downto 0) );
+			lcd_data	: OUT STD_LOGIC_VECTOR(31 downto 0);
+			
+			dmem_q	: IN STD_LOGIC_VECTOR(31 downto 0);
+			dmem_address	:  OUT STD_LOGIC_VECTOR(11 downto 0);
+			dmem_data	:  OUT STD_LOGIC_VECTOR(31 downto 0);
+			dmem_wren	: OUT STD_LOGIC	);
 END processor;
 
 ARCHITECTURE Structure OF processor IS
@@ -19,13 +24,15 @@ ARCHITECTURE Structure OF processor IS
 				clock	: IN STD_LOGIC ;
 				q	: OUT STD_LOGIC_VECTOR (31 DOWNTO 0) );
 	END COMPONENT;
-	COMPONENT dmem IS
-		PORT (	address	: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
-				clock	: IN STD_LOGIC ;
-				data	: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
-				wren	: IN STD_LOGIC ;
-				q	: OUT STD_LOGIC_VECTOR (31 DOWNTO 0) );
-	END COMPONENT;
+	
+--	COMPONENT dmem IS
+--		PORT (	address	: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
+--				clock	: IN STD_LOGIC ;
+--				data	: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+--				wren	: IN STD_LOGIC ;
+--				q	: OUT STD_LOGIC_VECTOR (31 DOWNTO 0) );
+--	END COMPONENT;
+	
 	COMPONENT regfile IS
 		PORT (	clock, wren, clear	: IN STD_LOGIC;
 				regD, regA, regB	: IN STD_LOGIC_VECTOR(4 DOWNTO 0);
@@ -137,8 +144,11 @@ BEGIN
 	execute11: mux GENERIC MAP (n => 12) PORT MAP (A=>PC_PlusoneJump, B=>PC_RegBranch, s=>msimDummy9, F=>PC_next);	-- determine PC_next
 	
 	-- MEMORY Stage
-	memory1: dmem PORT MAP (address=>data_ALUoutput(11 DOWNTO 0), clock=>msimDummyClk, data=>data_readRegB, wren=>ctrl_dmem_wren, q=>data_DMEMoutput);	-- data memory
-	
+	-- memory1: dmem PORT MAP (address=>data_ALUoutput(11 DOWNTO 0), clock=>msimDummyClk, data=>data_readRegB, wren=>ctrl_dmem_wren, q=>data_DMEMoutput);	-- data memory
+	memory1: dmem_address<=data_ALUoutput(11 DOWNTO 0);
+	memory2: dmem_data<=data_readRegB;
+	memory3: dmem_wren<=ctrl_dmem_wren;
+	memory4: data_DMEMoutput<=dmem_q;
 	-- WRITEBACK Stage
 	writeback1: mux GENERIC MAP (n => 32) PORT MAP (A=>data_AluKeyboardLink, B=>data_DMEMoutput, s=>ctrl_dmem_notALU, F=>data_writeReg);	-- select between DMEMoutput or ALUoutput/keyboard/link for data_writeReg
 	

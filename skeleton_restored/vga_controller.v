@@ -7,8 +7,14 @@ module vga_controller(iRST_n,
                       g_data,
                       r_data,
 							 ps2_out,
-							 ps2_key_pressed);
-
+							 ps2_key_pressed,
+							 vga_addr,
+							 vga_value);
+//read from dmem
+//dmem block's address							 
+output wire [11:0] vga_addr;
+//the value of dmem block's address	
+input wire [31:0] vga_value;	
 	
 input iRST_n;
 input iVGA_CLK;
@@ -49,6 +55,8 @@ wire backedge;			//enable background's edge display
 
 parameter FREQUENCY = 20000000;
 parameter blocksize=16;
+
+assign vga_addr= (y>=240&&y<=400&&x>=80&&x<=400) ? (y-240)/16+(x-80)/16*10 : 12'hfff;
 
 initial 
 begin
@@ -158,13 +166,16 @@ img_index	img_index_inst (
 	);	
 //////
 
+wire [23:0] backcolor;
+assign backcolor=vga_value==1?24'h888888:bgr_data_raw;
+
 //use mux to choose the bgr data
 
 //select background grid
 
 bgGrid bgGrid0(x, y, backedge);
 wire [23:0] bgGridData;
-assign bgGridData=backedge==1?24'h444444:bgr_data_raw;
+assign bgGridData=backedge==1?24'h444444:backcolor;
 
 //////latch valid data at falling edge;
 //always@(posedge VGA_CLK_n) bgr_data <= bgr_data_raw;
