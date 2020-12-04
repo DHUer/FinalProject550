@@ -183,7 +183,18 @@ end
 
 endmodule
  	
-
+// compute out whether current addrx and addry is in the cell or edge, or background
+// module mapToEdgeOrCell(
+	// input[9: 0] x, 
+	// input[9: 0] y, 
+	// input[4: 0]x_shape,
+	// input[4: 0]y_shape,
+	// input [8: 0] shape,
+	// output isEdge,
+	// output isInner);
+	
+	
+// endmodule
 
 
 
